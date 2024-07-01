@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>370</width>
+    <height>219</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Калькулятор СЛАР</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>331</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="4" column="0" colspan="6">
+      <widget class="QRadioButton" name="HandButton">
+       <property name="text">
+        <string>Введення коефіцієнтів власноруч</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="5">
+      <widget class="QLabel" name="label_max">
+       <property name="text">
+        <string>max:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QLineEdit" name="min"/>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLabel" name="label_min">
+       <property name="text">
+        <string>min:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="6">
+      <widget class="QLineEdit" name="max"/>
+     </item>
+     <item row="3" column="0" colspan="3">
+      <widget class="QRadioButton" name="RandButton">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string>Введення рандомно</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="5">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Оберіть вид створення СЛАР:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0" colspan="7">
+      <widget class="QPushButton" name="CreateButton">
+       <property name="text">
+        <string>Створити СЛАР</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="4">
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Калькулятор СЛАР</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5" colspan="2">
+      <widget class="QLineEdit" name="sizeint"/>
+     </item>
+     <item row="1" column="0" colspan="5">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Введіть розмірність СЛАР</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>370</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="dowload"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <action name="dowload">
+   <property name="text">
+    <string>Завантажити СЛАР</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
